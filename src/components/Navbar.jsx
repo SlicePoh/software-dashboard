@@ -7,7 +7,7 @@ import { MdOutlineDarkMode } from "react-icons/md"
 import s from '../style'
 export const Navbar = () => {
   return (
-    <div className={`${s.flexBetween} h-16 w-auto relative ${s.divHor} `}>
+    <div className={`${s.flexBetween} ml-16 h-16 w-auto static ${s.divHor} `}>
         <div className="headings">
           <ul className={`${s.flexStart} p-4`}>
             <li className={`${s.navHead}`}>

@@ -7,8 +7,8 @@ import { FiMessageSquare } from "react-icons/fi";
 import s, { layout } from '../style'
 export const Menubar = () => {
   return (
-    <div className={`${layout.menu} ${s.divVer} `}>
-        <div className={`${s.flexCenter} `}>
+    <div className={`${layout.menu} bg-white ${s.divVer} `}>
+        <div className={`${s.flexCenter} my-4 `}>
           <button>
             <RxHamburgerMenu/>
           </button>

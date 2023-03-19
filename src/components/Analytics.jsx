@@ -4,13 +4,14 @@ import {HiOutlineExclamationCircle} from "react-icons/hi"
 import {AiOutlineCalendar} from "react-icons/ai"
 import {BsThreeDots} from "react-icons/bs"
 import s, { layout } from '../style'
-import {LineChart} from './LineChart'
-//import SparkLine from './SparkLine'
+import { ShowLine } from './ShowLine'
+import { ShowDough } from './ShowDough'
+
 export const Analytics = () => {
   return (
     <div className={`${s.anal} `}>
         <div className={`${s.flexStart} my-4 sm:text-xs text-sm text-slate-400`}>
-            <p><span className={`text-violet-700`}>ANALYTICS</span> <span className={`${s.padX}`}>&gt;</span> MERCOR.IO</p>
+            <p><span className={`text-violet-700 `}>ANALYTICS</span> <span className={`${s.padX}`}>&gt;</span> MERCOR.IO</p>
         </div>
         <div className={`${s.flexStart}  `}>
           <div className={`${s.flexCenter}`}>
@@ -23,14 +24,16 @@ export const Analytics = () => {
         </div>
         <div className={`${s.flexBetween}`} >
           <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
-            <p className={` my-10 font-extrabold`}>Daily Users</p>
-            <HiOutlineExclamationCircle/>
+            <p className={` my-4 font-extrabold`}>Daily Users</p>
+            <div className="text-slate-300 mx-2 ">
+              <HiOutlineExclamationCircle/>
+            </div>
           </div>
           <div className={`${s.flexCenter} `}>
             <div className={`bg-gray-100 w-14 h-1 my-auto rounded-xl mr-5 `}></div>
             <p className="text-slate-300 text-xs"> Provisional Month</p>
             <button className={`${layout.bord} `}>
-              <p>March 2023</p>
+              <p className=" mx-2">March 2023</p>
               <AiOutlineCalendar/>
             </button>
             <button className={`${layout.bord} `}>
@@ -39,24 +42,46 @@ export const Analytics = () => {
           </div>
         </div>
 
-        <div className="line">
-          <LineChart/>
+        <div className={`${s.flexCenter}`}>
+          <ShowLine/>
         </div>
-        
+        <div className={`${s.flexBetween} `} >
+          <div>
+            <div className={`${s.flexStart} sm:text-sm xl:text-lg `}>
+              <p className={`font-extrabold`}>Total Submissions</p>
+              <div className="text-slate-300 mx-2 ">
+                <HiOutlineExclamationCircle/>
+              </div>
+            </div>
+            <div className="">
+              <ShowDough/>
+            </div>
+          </div>
 
-        <div className={`${s.flexStart} flex-col`} >
-          <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
-            <p className={`font-extrabold`}>Total Submissions</p>
-            <HiOutlineExclamationCircle/>
+          {/* <div>
+            <div className={`${s.flexStart}`}>
+              <div className={`bg-violet-600 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
+              <p className="text-slate-300 text-xs"> Coding Competitions</p>
+            </div>
+            <div className={`${s.flexStart}`}>
+              <div className={`bg-violet-300 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
+              <p className="text-slate-300 text-xs"> Projects</p>
+            </div>
+            <div className={`${s.flexStart}`}>
+              <div className={`bg-violet-100 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
+              <p className="text-slate-300 text-xs"> Others</p>
+            </div>
+          </div> */}
+
+          <div>
+            <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
+              <p className={` font-extrabold`}>Weekly Active Percentage</p>
+              <div className="text-slate-300 mx-2 ">
+                <HiOutlineExclamationCircle/>
+              </div>
+            </div>
           </div>
-          <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
-            <p className={` font-extrabold`}>Weekly Active Percentage</p>
-            <HiOutlineExclamationCircle/>
-          </div>
-          <div className={`${s.flexStart}`}>
-            <div className={`bg-violet-700 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
-            <p className="text-slate-300 text-xs"> Coding Competitions</p>
-          </div>
+          
         </div>
     </div>
   )
