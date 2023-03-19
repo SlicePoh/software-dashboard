@@ -34,18 +34,17 @@ export const ShowDough=()=> {
     plugins: {
         legend: {
             position: 'right',
-            align: 'start',
+            align: 'center',
             labels: {
-              backgroundColor: "red",
               borderColor: "#000",
               useBorderRadius: true,
-              borderRadius: 5,
+              borderRadius: 2,
               boxWidth: 40
             }
         },
     },
     cutout: '80%',
-    borderRadius: 15,
+    borderRadius: 10,
   };
   const userData={
     labels: doughChartData.map((data) => data.x),
@@ -62,7 +61,7 @@ export const ShowDough=()=> {
         ],
   };
     return (
-        <div style={{ width: '500px',height: '140px' }}>
+        <div style={{ width: '500px',height: '145px' }}>
             <Doughnut data={userData} options={options} plugins={''} />
         </div>
     );

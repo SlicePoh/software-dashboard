@@ -26,7 +26,7 @@ export const ShowLine=()=> {
             },
             x:{
                 ticks:{
-                    maxTicksLimit: 8
+                    maxTicksLimit: 7
                 },
             }
         },

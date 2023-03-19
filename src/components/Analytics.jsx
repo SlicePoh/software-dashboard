@@ -48,46 +48,34 @@ export const Analytics = () => {
         </div>
         <div className={`${s.flexBetween} `} >
           <div>
-            <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
+            <div className={`${s.flexSS} sm:text-sm xl:text-lg `}>
               <p className={`font-extrabold`}>Total Submissions</p>
               <div className="text-slate-300 mx-2 ">
                 <HiOutlineExclamationCircle/>
               </div>
             </div>
-            <div className="my-10 flex">
-              <ShowDough/>
-              <div className=" -translate-x-96 translate-y-12 text-2xl font-extrabold">507317</div>
+            <div className="my-6 flex">
+              <ShowDough/> 
+              <div className="-translate-x-96 translate-y-12">
+                <div className="ml-2 text-2xl font-extrabold">507,317</div>
+                <div className="text-slate-300 translate-x-7 mt-4 text-sm">Label</div>
+              </div>
             </div>
           </div>
 
-          {/* <div>
-            <div className={`${s.flexStart}`}>
-              <div className={`bg-violet-600 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
-              <p className="text-slate-300 text-xs"> Coding Competitions</p>
-            </div>
-            <div className={`${s.flexStart}`}>
-              <div className={`bg-violet-300 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
-              <p className="text-slate-300 text-xs"> Projects</p>
-            </div>
-            <div className={`${s.flexStart}`}>
-              <div className={`bg-violet-100 w-7 h-1 my-auto rounded-xl mr-3 `}></div>
-              <p className="text-slate-300 text-xs"> Others</p>
-            </div>
-          </div> */}
-
           <div >
-            <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
+            <div className={`${s.flexSS} sm:text-sm xl:text-lg `}>
               <p className={` font-extrabold`}>Weekly Active Percentage</p>
               <div className="text-slate-300 mx-2 ">
                 <HiOutlineExclamationCircle/>
               </div>
             </div>
-            <div className={`${s.flexCenter}`}>
+            <div className={`mt-6 ${s.flexCenter}`}>
               <div className="text-3xl font-extrabold">594,201</div>
-              <div className="text-sm text-slate-300">Total</div>
+              <div className="text-sm mx-4 text-slate-300">Total</div>
             </div>
-            <div className={`my-4 w-96 h-6 rounded-xl bg-lv`}>
-              <div className={`w-36 h-6 rounded-xl bg-[#7459D9]`}></div>
+            <div className={`my-4 w-96 h-5 rounded-xl bg-lv`}>
+              <div className={`w-28 h-5 rounded-xl bg-[#7459D9]`}></div>
             </div>
             <div className="flex justify-between">
               <div className="flex">
@@ -99,7 +87,7 @@ export const Analytics = () => {
                 <div className="text-slate-400 text-xs">Inactive</div>
               </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between my-4">
               <div className="flex">
                 <div className="text-slate-400 text-xs">173,016 users</div>
               </div>
