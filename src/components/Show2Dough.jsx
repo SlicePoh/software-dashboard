@@ -12,9 +12,6 @@ export const Show2Dough=()=> {
             legend: {
                 display: false
             },
-            tooltip: {
-                enabled: false
-            },
         },
         cutout: 23,
     };
@@ -26,8 +23,8 @@ export const Show2Dough=()=> {
             label: "Rate",
             data: dough2ChartData.map((data) => data.y),
             backgroundColor: [
-              "#9333ea",
-              "#f3e8ff",
+              "#7459D9",
+              "rgba(116, 89, 217, 0.2)",
             ],
             borderWidth: 0,
           },

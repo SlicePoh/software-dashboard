@@ -54,15 +54,15 @@ export const ShowDough=()=> {
             label: "Rate",
             data: doughChartData.map((data) => data.entries),
             backgroundColor: [
-              "#9333ea",
-              "#d8b4fe",
-              "#f3e8ff",
+              "#7459D9",
+              "rgba(116, 89, 217, 0.5)",
+              "rgba(116, 89, 217, 0.2)",
             ],
           },
         ],
   };
     return (
-        <div style={{ width: '500px',height: '150px' }}>
+        <div style={{ width: '500px',height: '140px' }}>
             <Doughnut data={userData} options={options} plugins={''} />
         </div>
     );

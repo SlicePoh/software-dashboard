@@ -6,7 +6,7 @@ import {BsThreeDots} from "react-icons/bs"
 import s, { layout } from '../style'
 import { ShowLine } from './ShowLine'
 import { ShowDough } from './ShowDough'
-import { ShowBar } from './ShowBar'
+//import { ShowBar } from './ShowBar'
 
 export const Analytics = () => {
   return (
@@ -54,8 +54,9 @@ export const Analytics = () => {
                 <HiOutlineExclamationCircle/>
               </div>
             </div>
-            <div className="my-10">
+            <div className="my-10 flex">
               <ShowDough/>
+              <div className=" -translate-x-96 translate-y-12 text-2xl font-extrabold">507317</div>
             </div>
           </div>
 
@@ -74,15 +75,37 @@ export const Analytics = () => {
             </div>
           </div> */}
 
-          <div className={`${s.flexCenter} flex-col`}>
+          <div >
             <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
               <p className={` font-extrabold`}>Weekly Active Percentage</p>
               <div className="text-slate-300 mx-2 ">
                 <HiOutlineExclamationCircle/>
               </div>
             </div>
-            <div>
-              <ShowBar/>
+            <div className={`${s.flexCenter}`}>
+              <div className="text-3xl font-extrabold">594,201</div>
+              <div className="text-sm text-slate-300">Total</div>
+            </div>
+            <div className={`my-4 w-96 h-6 rounded-xl bg-lv`}>
+              <div className={`w-36 h-6 rounded-xl bg-[#7459D9]`}></div>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex">
+                <div className={`bg-[#7459D9] w-14 h-1 my-auto rounded-xl mr-5 `}></div>
+                <div className="text-slate-400 text-xs">Active</div>
+              </div>
+              <div className="flex">
+                <div className={`bg-lv w-14 h-1 my-auto rounded-xl mr-5 `}></div>
+                <div className="text-slate-400 text-xs">Inactive</div>
+              </div>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex">
+                <div className="text-slate-400 text-xs">173,016 users</div>
+              </div>
+              <div className="flex">
+                <div className="text-black font-bold text-xs">421,185 users</div>
+              </div>
             </div>
           </div>
           

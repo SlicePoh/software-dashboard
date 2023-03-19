@@ -60,7 +60,7 @@ export const ShowLine=()=> {
         
     };
     return (
-        <div style={{ width: '1000px', height: '200px'}}>
+        <div style={{ width: '1000px', height: '210px'}}>
             <Line data={userData} options={options} />
         </div>
     );
