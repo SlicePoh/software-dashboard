@@ -37,7 +37,7 @@ export const Sidebar = () => {
                     </div>
                 </div>
                 <div className='mt-40 flex flex-col'>
-                    <div className={`${s.flexStart}`}> 
+                    <div className={`${s.flexCenter}`}> 
                         <div className={`text-lg font-bold`}>
                             Growth
                         </div>
@@ -45,10 +45,11 @@ export const Sidebar = () => {
                             <HiOutlineExclamationCircle />
                         </div>
                     </div>
-                    <div className={`${s.flexBetween} bg-white w-56 h-16 mt-6 rounded-xl shadow-lg`}>
+                    <div className={`${s.flexBetween} bg-white w-60 h-16 mt-6 rounded-xl shadow-lg `}>
                         <div className={`${s.flexCenter} bg-white h-20 w-20 mx-4 rounded-full`}>
                             <Show2Dough/>
                         </div>
+                        <div className=" -translate-x-16 font-extrabold">46%</div>
                         <div className='text-sm text-slate-300' >Monthly</div>
                         <div className='text-sm text-violet-700 mx-4' >+25%</div>
                     </div>

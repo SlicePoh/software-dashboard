@@ -43,9 +43,11 @@ export const Show2Dough=()=> {
             ctx.fillText(data,chart.getDatasetMeta(0).data[0].y)
         }
     };
+
+    
     return (
         <div style={{ width: 60 }}>
-            <Doughnut data={data} options={options} plugins={textCenter} />
+            <Doughnut data={data} options={options} plugins={textCenter}  />
         </div>
     );
 };

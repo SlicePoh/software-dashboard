@@ -6,6 +6,7 @@ import {BsThreeDots} from "react-icons/bs"
 import s, { layout } from '../style'
 import { ShowLine } from './ShowLine'
 import { ShowDough } from './ShowDough'
+import { ShowBar } from './ShowBar'
 
 export const Analytics = () => {
   return (
@@ -24,7 +25,7 @@ export const Analytics = () => {
         </div>
         <div className={`${s.flexBetween}`} >
           <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
-            <p className={` my-4 font-extrabold`}>Daily Users</p>
+            <p className={` my-2 font-extrabold`}>Daily Users</p>
             <div className="text-slate-300 mx-2 ">
               <HiOutlineExclamationCircle/>
             </div>
@@ -42,18 +43,18 @@ export const Analytics = () => {
           </div>
         </div>
 
-        <div className={`${s.flexCenter}`}>
+        <div className={`${s.flexCenter} mb-6`}>
           <ShowLine/>
         </div>
         <div className={`${s.flexBetween} `} >
           <div>
-            <div className={`${s.flexStart} sm:text-sm xl:text-lg `}>
+            <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
               <p className={`font-extrabold`}>Total Submissions</p>
               <div className="text-slate-300 mx-2 ">
                 <HiOutlineExclamationCircle/>
               </div>
             </div>
-            <div className="">
+            <div className="my-10">
               <ShowDough/>
             </div>
           </div>
@@ -73,12 +74,15 @@ export const Analytics = () => {
             </div>
           </div> */}
 
-          <div>
+          <div className={`${s.flexCenter} flex-col`}>
             <div className={`${s.flexCenter} sm:text-sm xl:text-lg `}>
               <p className={` font-extrabold`}>Weekly Active Percentage</p>
               <div className="text-slate-300 mx-2 ">
                 <HiOutlineExclamationCircle/>
               </div>
+            </div>
+            <div>
+              <ShowBar/>
             </div>
           </div>
           
