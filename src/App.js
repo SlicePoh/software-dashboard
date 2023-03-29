@@ -2,6 +2,7 @@
 import './App.css';
 import { Analytics } from './components/Analytics';
 import { Projects } from './components/Projects';
+import { Sidebar } from './components/Sidebar';
 import { CodingCompetitions } from './components/CodingCompetitions';
 import { Navbar } from './components/Navbar';
 import { Menubar } from './components/Menubar';
@@ -10,7 +11,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import { Sidebar } from './components/Sidebar';
+
 
 function App() {
   return (

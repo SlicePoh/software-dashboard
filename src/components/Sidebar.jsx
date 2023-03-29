@@ -10,7 +10,7 @@ export const Sidebar = () => {
         <div className={`${layout.sideB} `}>
             <div className={`${s.flexBetween} flex-col`}>
                 <div className={`${s.flexCenter} `}>
-                    <p className={` my-10 text-lg font-bold`}>Integrations</p>
+                    <p className={`dark my-10 text-lg font-bold text-black`}>Integrations</p>
                     <HiOutlineExclamationCircle className="text-slate-300 mx-4 "/>
                 </div>
                 <div className={`w-56 rounded-xl bg-white shadow-xl`}>
@@ -36,21 +36,21 @@ export const Sidebar = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-40 flex flex-col'>
-                    <div className={`${s.flexCenter}`}> 
-                        <div className={`text-lg font-bold`}>
+                <div className=' mt-40  flex flex-col'>
+                    <div className={`${s.flexCenter} `}> 
+                        <div className={`text-lg font-bold dark:text-white`}>
                             Growth
                         </div>
                         <div className="text-slate-300 mx-2 ">
                             <HiOutlineExclamationCircle />
                         </div>
                     </div>
-                    <div className={`${s.flexBetween} bg-white w-60 h-16 mt-6 rounded-xl shadow-lg `}>
-                        <div className={`${s.flexCenter} bg-white h-20 w-20 mx-4 rounded-full`}>
+                    <div className={`${s.flexBetween}   dark:bg-gray-700 text-slate-300 w-60 h-16 mt-6 rounded-xl shadow-lg `}>
+                        <div className={`${s.flexCenter}   dark:bg-gray-700 h-20 w-20 mx-4 rounded-full`}>
                             <Show2Dough/>
                         </div>
                         <div className=" -translate-x-16 font-extrabold">46%</div>
-                        <div className='text-sm text-slate-300' >Monthly</div>
+                        <div className='text-sm ' >Monthly</div>
                         <div className='text-sm text-violet-700 mx-4' >+25%</div>
                     </div>
                 </div>

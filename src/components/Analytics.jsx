@@ -6,7 +6,8 @@ import {BsThreeDots} from "react-icons/bs"
 import s, { layout } from '../style'
 import { ShowLine } from './ShowLine'
 import { ShowDough } from './ShowDough'
-//import { ShowBar } from './ShowBar'
+//import { Sidebar } from './Sidebar'
+//import App from '../App'
 
 export const Analytics = () => {
   return (
@@ -96,7 +97,6 @@ export const Analytics = () => {
               </div>
             </div>
           </div>
-          
         </div>
     </div>
   )
